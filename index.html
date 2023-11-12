@@ -3,56 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>X-ray Promo</title>
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/grid.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-OOQOp3U6UeCuojvLVVR8snq-3biL4gXHF1i1tu14eUQIcZjy9L45cV+WjvzLuJl6ZZKc+3NFgxEmCnW5vZ8RA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet" href="css/main.css">
+    <title>Poke Earbuds</title>
 </head>
 <body>
-    <h1 class="hidden">Poke Earbuds</h1>
-    <div class="container">
-        <header id="main-header" class="grid">
-            <div id="header-logo" class="box-color">
-                <h2>Logo</h2>
+    <nav>
+        <div class="logo">POKE.</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Store</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+    <section>
+        <a href="#" class="buy-now-button">Buy Now</a>
+    </section>
+    <model-viewer id="model" src="model/new_earbuds-final.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" camera-orbit="-90.73deg 67.26deg 36.7m" field-of-view="28.33deg">
+        <button class="Hotspot" slot="hotspot-1" data-position="7.982205148785237m -32.501750581317644m -20.86042862696753m" data-normal="-0.0262153282406804m -0.9995401519424468m -0.015239462592360776m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation" id="hotspot-1">
+              <h2>Power/Multi-function button</h2>
+              <p>Powers on/off with a press. Double press for the next track, triple press for voice assistant.</p>
             </div>
-
-            <nav id="header-nav" class="box-color">
-            </nav>
-            <div id="social-media" class="box-color">
-            </div>
-            <div id="mobile-menu-icon" class="box-color">
-                <i class="fas fa-bars"></i>
-            </div>
-            <nav id="mobile-nav" class="box-color"></nav>
-        </header>
-    </div>
-    <!-- Hero Image -->
-    <div class="container">
-        
-        <section id="highlights" class="grid">
-            <div id="highlight1text" class="box-color2"></div>
-            <div id="highlight2text" class="box-color2"></div>
-            <div id="hero" class="box-color"></div>
-        </section>
-        
-        <section id="section1" class="box-color2">
-        </section>
-        
-        <section id="section2" class="box-color">
-        </section>
+        </button>
+        <button class="Hotspot" slot="hotspot-2" data-position="9.28869921126451m -31.625475267566987m -11.268821696812285m" data-normal="-0.6391843465467761m -0.057040003691219816m -0.7669353356760115m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation" id="hotspot-2">
+              <h2>Charging Point</h2>
+              <p>Connects to the charging case for quick and convenient recharging.</p>
   
-    </div>
-    <div id="footer-con-full" class="box-color">
-        <div class="container">
-            <footer class="grid">
-                <div id="footer-logo" class="box-color2"></div>
-                <nav id="footer-nav" class="box-color2">
-                    <h2 class="hidden">Footer Navigation</h2>
-                </nav>
-                <div id="footer-media-icons" class="box-color2"></div>
-            </footer>
+            </div>
+        </button>
+        <button class="Hotspot" slot="hotspot-3" data-position="3.879231069656858m -31.2530759900685m -9.667402638322425m" data-normal="-0.24742413882624154m -0.033168251296603043m -0.968339384013693m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation" id="hotspot-3">
+              <h2>Stainless Mesh Speaker</h2>
+              <p>Houses a high-quality stainless mesh speaker for crystal-clear audio output.</p>
+  
+            </div>
+        </button>
+        <button class="Hotspot" slot="hotspot-4" data-position="10.037894089746437m -31.038159008492634m -8.245142231480418m" data-normal="0.6614777895609621m 0.04772284241524037m 0.7484448304513523m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation" id="hotspot-4">
+              <h2>Volume-Up Button</h2>
+              <p>Press to increase the volume for an immersive audio experience.</p>
+  
+            </div>
+        </button>
+        <button class="Hotspot" slot="hotspot-5" data-position="7.60805538107809m -32.96805125021847m -15.726084439769554m" data-normal="-0.024303302791196232m -0.999640310645645m -0.01134014134471015m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation" id="hotspot-5">
+              <h2>Volume-Down Button</h2>
+              <p>Press to decrease the volume, ensuring personalized and comfortable listening levels.</p>
+  
+            </div>
+        </button>
+        <button slot="ar-button" id="ar-button">
+            View in your space
+        </button>
+        <div id="ar-prompt">
+            <img src="ar_hand_prompt.png">
         </div>
- <script src="js/main.js"></script>   
+      </model-viewer>  
+      <script src="js/main.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+      <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.2.0/model-viewer.min.js"></script>
+    
 </body>
 </html>
