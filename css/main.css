@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f0f0f0;
+    background-color:black;
 }
 
 nav {
@@ -224,19 +224,20 @@ model-viewer {
 #model-description p {
     font-size: 20px;
     line-height: 1.6;
-    color: black;
+    color: #fff;
     margin-bottom: 20px;
 }
 
 #model-description h2 {
     font-size: 15px;
-    color:black; 
+    color:#fff; 
     margin-bottom: 2px;
 }
 
 #model-description h3 {
     font-size: 50px;
     margin-top: 10px;
+    color: #fff;
 }
 #model-description h4 {
   color:#E0E0E0 ;
@@ -305,10 +306,12 @@ model-viewer {
 
   .xray-section p {
     font-size: 20px;
+    color: #fff;
   }
 
   .xray-section h2 {
     font-size: 40px;
+    color: #fff;
 
   }
   
@@ -316,5 +319,75 @@ model-viewer {
     max-width: 100%;
   }
 
+  #hamburger-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+  }
 
+  #hamburger-icon div {
+    width: 45px;
+    height: 5px;
+    background-color: rgb(0, 0, 0);
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 5px;
+  }
+
+  .open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+  }
+
+  .open .bar2 {
+    opacity: 0;
+  }
+
+  .open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, 8px);
+    transform: rotate(45deg) translate(-6px, 8px);
+  }
+
+  .open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .mobile-menu {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .mobile-menu li {
+    padding: 25px;
+    text-align: center;
+    list-style: none;
+  }
+
+  .mobile-menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .mobile-menu a:hover{
+    color: #FFA500;
+  }
+
+  @media only screen and (max-width: 600px){
+    header nav {
+      display: none;
+    }
+    #hamburger-icon {
+      display: block;
+    }
+  }
   
