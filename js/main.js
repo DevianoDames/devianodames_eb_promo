@@ -135,7 +135,6 @@
 })();
 
 
-function toggleMenu() {
-  const menu = document.querySelector('.menu');
-  menu.classList.toggle('show');
+function toggleMobileMenu(menu) {
+  menu.classList.toggle('open');
 }
