@@ -6,6 +6,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
 }
 
 nav {
@@ -53,21 +54,19 @@ nav ul li a:hover{
     border-radius: 6px;
 }
 
-section{
+.hero-image{
     width: 100%;
-    height: 100vh;
-    background: url(/images/Promo_banner.jpg);
+    height: 100%;
     background-size: cover;
     background-position: center;
-    padding-top: 150px;
 }
 
 
 
 .buy-now-button {
     position: absolute;
-    top: 90%;
-    left: 55%;
+    top: 20%;
+    left: 50%;
     transform: translate(-50%, -50%);
     background: linear-gradient(45deg, #FFD700, #FFA500);
     color: white;
@@ -81,6 +80,7 @@ section{
 .buy-now-button:hover {
     background: linear-gradient(45deg, #FFA500, #FFD700);
 }
+
 
 
 
@@ -258,3 +258,63 @@ model-viewer {
     background-color: #5F9EA0; 
     transform: scale(1.05);
 }
+
+
+#outerShell {
+    max-width: 1200px;
+    border: solid 1px #666;
+    margin: 0 auto;
+  }
+  
+  #imageCon {
+    position: relative;
+    max-width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+  }
+  
+  .slideImage {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100vh;
+  }
+  
+  .image-right {
+    background: url(../images/earbuds-xray1.png) no-repeat;
+    background-size: cover;
+  }
+  
+  .image-left {
+    background: url(../images/earbuds-xray2.png) no-repeat;
+    background-size: cover;
+    width: 50%;
+ 
+  }
+  
+  .image-drag {
+    background-color: #666;
+    left: 50%;
+    width: 4px;
+    cursor: pointer;
+  }
+
+  .xray-section {
+    text-align: center;
+  }
+
+  .xray-section p {
+    font-size: 20px;
+  }
+
+  .xray-section h2 {
+    font-size: 40px;
+
+  }
+  
+  #earbuds {
+    max-width: 100%;
+  }
+
+
+  
